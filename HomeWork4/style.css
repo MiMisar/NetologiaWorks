@@ -1,0 +1,36 @@
+.big {
+    text-transform: uppercase;
+}
+
+.mark {
+    list-style-image: url(img/mark.jpg);
+    font-style: italic;
+}
+
+.letter {
+    list-style: upper-alpha;
+}
+
+.olnumbers {
+    list-style-type: none;
+    counter-reset: item;
+}
+
+.numbers:before {
+    content: counter(item) ") ";
+    counter-increment: item;
+}
+
+.color {
+    color: blueviolet;
+}
+
+.table {
+    width: 600px;
+    border-collapse: collapse;
+}
+
+tr, td {
+    padding: 3px;
+    border: 1px solid black;
+}
